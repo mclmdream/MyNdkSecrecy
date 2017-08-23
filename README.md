@@ -4,10 +4,10 @@ ndk生成.so
 
 # 编译ndk生成.so
 
-###目的：仅仅只是简单的实用ndk生成.so文件
-###效果：点击按钮button,调用.so文件的内容
-###ndk版本：android-ndk-r13b
-###项目目录 如图：
+### 目的：仅仅只是简单的实用ndk生成.so文件
+### 效果：点击按钮button,调用.so文件的内容
+### ndk版本：android-ndk-r13b
+### 项目目录 如图：
 ![这里写图片描述](http://img.blog.csdn.net/20170823172325037?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZmxvd2VybWFjaGFv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 1.首先看下代码
 MainActivity:
@@ -71,14 +71,14 @@ public class Secrety {
 }
 ```
 
-2.配置module的build.gradle:在defaultConfig中加
+2.配置module的build.gradle:在defaultConfig中加,如图：
 ```
  ndk {
             moduleName = 'bsdiff'
             abiFilters "armeabi", "armeabi-v7a", "x86"
         }
 ```
-如图：
+
 ![这里写图片描述](http://img.blog.csdn.net/20170823171647306?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZmxvd2VybWFjaGFv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 3.打开studio中的terminal,生成Secrety这个类的头文件,网上很多资料,例如在Terminal中，切换到项目Java目录下执行“javah -jni 包名.类名”,如下图： 
