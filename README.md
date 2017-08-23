@@ -9,6 +9,8 @@ ndk生成.so
 ### ndk版本：android-ndk-r13b
 ### 项目目录 如图：
 ![这里写图片描述](http://img.blog.csdn.net/20170823172325037?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZmxvd2VybWFjaGFv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+
 1.首先看下代码
 MainActivity:
 
